@@ -8,7 +8,7 @@ import slick.profile.SqlProfile.ColumnOption.SqlType
 case class Announcement(
   id: Option[Int] = None,
   message: String,
-  createdAt: Timestamp = new Timestamp(System.currentTimeMillis())
+  ctime: Timestamp = new Timestamp(System.currentTimeMillis())
 )
 
 class Announcements(tag: Tag) extends Table[Announcement](tag, "announcements") {
