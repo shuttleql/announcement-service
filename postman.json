@@ -1,0 +1,59 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ShuttleQL Announcement Service",
+		"_postman_id": "839ad030-7c07-4feb-3598-ff604d8025ff",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8083/setup",
+			"request": {
+				"url": "http://localhost:8083/setup",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/announcements",
+			"request": {
+				"url": "http://localhost:8083/announcements",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"Hello, this is an announcement\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8083/announcements/0/1",
+			"request": {
+				"url": "http://localhost:8083/announcements/0/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
