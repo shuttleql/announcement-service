@@ -19,7 +19,7 @@ class AnnouncementServiceServlet extends AnnouncementServiceStack with JacksonJs
   private def getResponce = enrichResponse(response)
 
   before() {
-    //auth
+    auth
     contentType = formats("json")
   }
 
