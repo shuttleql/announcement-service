@@ -39,7 +39,8 @@ object AnnouncementServiceBuild extends Build {
         "org.slf4j" % "slf4j-nop" % "1.6.4",
         "org.postgresql" % "postgresql" % "9.4.1211",
         "com.typesafe.slick" %% "slick-hikaricp" % "3.1.1",
-        "com.shuttleql" %% "gandalf" % "1.0"
+        "com.shuttleql" %% "gandalf" % "1.0",
+        "com.amazonaws" % "aws-java-sdk" % "1.11.46"
       ),
       scalateTemplateConfig in Compile <<= (sourceDirectory in Compile){ base =>
         Seq(
